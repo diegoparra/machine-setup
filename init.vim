@@ -11,6 +11,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jiangmiao/auto-pairs'
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
@@ -73,6 +74,9 @@ if (has("nvim")) "Transparent background. Only for nvim
     highlight EndOfBuffer guibg=NONE ctermbg=NONE
 endif
 
+
+"""""""""" Go Lang
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 
 
@@ -171,7 +175,7 @@ endif
 " COC Config """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
-let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-pairs', 'coc-yaml']
+let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-pairs', 'coc-yaml', 'coc-go']
 
 
 

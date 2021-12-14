@@ -6,10 +6,13 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
+# Set system variables
 export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 
 # Path to your oh-my-zsh installation.
@@ -125,3 +128,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Go export
+export PATH=$PATH:/usr/local/go/bin
