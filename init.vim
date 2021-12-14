@@ -77,9 +77,17 @@ endif
 
 """""""""" Go Lang
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
 
+let g:go_fmt_command = "goimports"
+let g:go_list_type = "quickfix"
+let g:go_auto_type_info = 1
 
-
+"""""""""" Identation
+set list
+set listchars=tab:!·,trail:·
 
 " Remaps """"""""""
 " remaps aqui
@@ -175,7 +183,7 @@ endif
 " COC Config """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Plugins
-let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-pairs', 'coc-yaml', 'coc-go']
+let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-pairs', 'coc-yaml',]
 
 
 
