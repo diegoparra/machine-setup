@@ -39,6 +39,7 @@ source $ZSH/oh-my-zsh.sh
 ### Common Aliases
 alias wkt="/mnt/c/Users/diego/Documents/wkt"
 alias v="nvim"
+alias gs="git status"
 
 ### K8S aliases
 alias k="kubectl"

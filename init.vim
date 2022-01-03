@@ -49,6 +49,9 @@ set splitright       " Create the vertical splits to the right
 set splitbelow       " Create the horizontal splits below
 set autoread         " Update vim after file update from outside
 set mouse=a          " Enable mouse support
+set relativenumber   " set relative line number
+set list
+set listchars=tab:!·,trail:·
 filetype on          " Detect and set the filetype option and trigger the FileType Event
 filetype plugin on   " Load the plugin file for the file type, if any
 filetype indent on   " Load the indent file for the file type, if any
@@ -85,9 +88,8 @@ let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
 let g:go_auto_type_info = 1
 
-"""""""""" Identation
-set list
-set listchars=tab:!·,trail:·
+
+
 
 " Remaps """"""""""
 " remaps aqui
