@@ -10,10 +10,18 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 ```
 
+```
+ nvm install node lts 
+```
+
     - python3
 
 ```
 python3 -m ensurepip --upgrade
+```
+
+```
+pip3 install pynvim
 ```
 
 
@@ -21,8 +29,13 @@ python3 -m ensurepip --upgrade
 # Configuring shortcuts
 
 ```
-ln -s /mnt/c/Users/diego/machine-setup/zshrc ~/.zshrc
-ln -s /mnt/c/Users/diego/machine-setup/tmux.conf ~/.tmux.conf
-ln -s /mnt/c/Users/diego/machine-setup/init.vim ~/.config/nvim/init.vim
-ln -s /mnt/c/Users/diego/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
+cd ~ 
+git clone https://github.com/diegoparra/machine-setup.git  
+```
+
+```
+ln -s ${PWD}/machine-setup/zshrc ~/.zshrc
+ln -s ${PWD}/machine-setup/tmux.conf ~/.tmux.conf
+ln -s ${PWD}/machine-setup/init.vim ~/.config/nvim/init.vim
+ln -s ${PWD}/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
 ```
