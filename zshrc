@@ -37,9 +37,11 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ### Common Aliases
-alias wkt="/mnt/c/Users/diego/Documents/wkt"
+alias wkt="${HOME}/Documents/wkt"
 alias v="nvim"
 alias gs="git status"
+
+alias red="${HOME}/Documents/wkt/linkfire/Redirector3"
 
 ### K8S aliases
 alias k="kubectl"
