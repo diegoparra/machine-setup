@@ -1,7 +1,7 @@
 call plug#begin()
 " Plugins aqui
 Plug 'sainnhe/sonokai'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -15,9 +15,12 @@ Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
+
 if (has("nvim"))
+    Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-fzy-native.nvim'
 endif
 
 
@@ -74,6 +77,7 @@ endif
 "#let g:sonokai_current_word = 'bold'
 "#colorscheme sonokai
 colorscheme gruvbox
+set background=dark
 
 if (has("nvim")) "Transparent background. Only for nvim
     highlight Normal guibg=NONE ctermbg=NONE
