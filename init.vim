@@ -12,6 +12,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
