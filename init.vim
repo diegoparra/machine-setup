@@ -1,6 +1,7 @@
 call plug#begin()
 " Plugins aqui
 Plug 'sainnhe/sonokai'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -66,12 +67,13 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 0
-let g:sonokai_diagnostic_line_highlight = 1
-let g:sonokai_current_word = 'bold'
-colorscheme sonokai
+"#let g:sonokai_style = 'andromeda'
+"#let g:sonokai_enable_italic = 1
+"#let g:sonokai_disable_italic_comment = 0
+"#let g:sonokai_diagnostic_line_highlight = 1
+"#let g:sonokai_current_word = 'bold'
+"#colorscheme sonokai
+colorscheme gruvbox
 
 if (has("nvim")) "Transparent background. Only for nvim
     highlight Normal guibg=NONE ctermbg=NONE
