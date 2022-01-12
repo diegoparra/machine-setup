@@ -17,6 +17,10 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lewis6991/gitsigns.nvim'
 
+"""Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+
 if (has("nvim"))
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
