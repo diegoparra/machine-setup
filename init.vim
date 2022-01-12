@@ -15,6 +15,7 @@ Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
+Plug 'lewis6991/gitsigns.nvim'
 
 if (has("nvim"))
     Plug 'nvim-lua/popup.nvim'
