@@ -130,21 +130,25 @@ nmap tt :q<CR>
 " Call command shortcut
 nmap tc :!
 
+" set jj as scape char
+imap jj <Esc>
 
 
 
 " autocmd """"""""""
 " autocmds aqui
-"
-function! HighlightWordUnderCursor()
-    if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
-        exec 'match' 'Search' '/\V\<'.expand('<cword>').'\>/'
-    else
-        match none
-    endif
-endfunction
 
-autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()"
+
+" Cursor Highlight
+" function! HighlightWordUnderCursor()
+"     if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
+"         exec 'match' 'Search' '/\V\<'.expand('<cword>').'\>/'
+"     else
+"         match none
+"     endif
+" endfunction
+"
+" autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()"
 
 
 
