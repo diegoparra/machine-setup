@@ -34,11 +34,11 @@ git clone https://github.com/diegoparra/machine-setup.git
 ```
 
 ```
-ln -s ${PWD}/machine-setup/zshrc ~/.zshrc
-ln -s ${PWD}/machine-setup/tmux.conf ~/.tmux.conf
-ln -s ${PWD}/machine-setup/init.vim ~/.config/nvim/init.vim
-ln -s ${PWD}/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
-ln -s ${PWD}/machine-setup/i3 ~/.config/i3/config
-ln -s ${PWD}/machine-setup/i3status ~/.config/i3status/config
+ln -s ${HOME}/machine-setup/zshrc ~/.zshrc
+ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
+ln -s ${HOME}/machine-setup/init.vim ~/.config/nvim/init.vim
+ln -s ${HOME}/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -s ${HOME}/machine-setup/i3/config ~/.config/i3/config
+ln -s ${HOME}/machine-setup/i3status/config ~/.config/i3status/config
 
 ```
