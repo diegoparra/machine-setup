@@ -11,7 +11,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
 ```
- nvm install node lts 
+ nvm install node lts
 ```
 
     - python3
@@ -29,8 +29,8 @@ pip3 install pynvim
 # Configuring shortcuts
 
 ```
-cd ~ 
-git clone https://github.com/diegoparra/machine-setup.git  
+cd ~
+git clone https://github.com/diegoparra/machine-setup.git
 ```
 
 ```
@@ -38,4 +38,7 @@ ln -s ${PWD}/machine-setup/zshrc ~/.zshrc
 ln -s ${PWD}/machine-setup/tmux.conf ~/.tmux.conf
 ln -s ${PWD}/machine-setup/init.vim ~/.config/nvim/init.vim
 ln -s ${PWD}/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
+ln -s ${PWD}/machine-setup/i3 ~/.config/i3/config
+ln -s ${PWD}/machine-setup/i3status ~/.config/i3status/config
+
 ```
