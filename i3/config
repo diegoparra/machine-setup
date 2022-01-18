@@ -148,20 +148,25 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Screen configuration
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --primary --mode 2560x1080 --pos 0x0 --rotate normal
 
-# Assign applications to workspaces
-exec --no-startup-id i3-msg 'workspace 1:Terminal; exec /usr/bin/gnome-terminal'
-exec --no-startup-id i3-msg 'workspace 2:Web; exec /usr/bin/brave-browser'
-exec --no-startup-id i3-msg 'workspace 3:Slack; exec /usr/bin/slack'
-
 # Assign workspaces to screens
 workspace 1 output HDMI-1-1
 workspace 2 output eDP-1
 workspace 3 output eDP-1
 
+# Assign applications to workspaces
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/gnome-terminal'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/brave-browser'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/slack'
+
+assign [class="gnome-terminal"] $ws1
+assign [class="brave-browser"] $ws2
+assign [class="slack"] $ws3
 
 # Setup wallpaper
 exec --no-startup-id feh --fullscreen --no-fehbg --bg-fill '/home/parra/Pictures/mr.jpg'
 
+# Set screenshot alias
+bindsym --release Print exec gnome-screenshot -a
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
