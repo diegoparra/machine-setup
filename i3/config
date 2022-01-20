@@ -60,7 +60,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -104,6 +104,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# Lock Screen
+bindsym $mod+l exec --no-startup-id i3lock -i /home/parra/Pictures/mr.jpg
 # focus the child container
 #bindsym $mod+d focus child
 
