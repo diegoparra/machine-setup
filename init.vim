@@ -90,7 +90,7 @@ if (has("nvim")) "Transparent background. Only for nvim
 endif
 
 
-"""""""""" Go Lang
+"""""""""" Golang
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
@@ -99,12 +99,11 @@ autocmd FileType go nmap <leader>r  <Plug>(go-run)
 let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
 let g:go_auto_type_info = 1
-
-
+let g:go_doc_popup_window = 1
 
 
 " Remaps """"""""""
-" remaps aqui
+" remaps here
 nmap op o<Esc>k
 nmap oi O<Esc>j
 nmap oo A<CR>
@@ -152,14 +151,11 @@ imap jj <Esc>
 
 
 
-
-
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:airline_theme = 'sonokai'
-
 
 
 
@@ -172,8 +168,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-
 
 
 
@@ -202,7 +196,6 @@ endif
 "
 " Plugins
 let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-pairs', 'coc-yaml',]
-
 
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
