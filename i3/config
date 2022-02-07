@@ -147,8 +147,13 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
-# Screen configuration
-exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --primary --mode 2560x1080 --pos 0x0 --rotate normal
+# Screen configuration notebook right side
+#exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --primary --mode 2560x1080 --pos 0x0 --rotate normal
+
+
+# Screen configuration notebook left side
+exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-1 --off --output HDMI-1-1 --primary --mode 2560x1080 --pos 1920x0 --rotate normal
+
 
 # Assign workspaces to screens
 workspace 1 output HDMI-1-1
