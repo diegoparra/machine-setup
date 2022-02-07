@@ -17,6 +17,9 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lewis6991/gitsigns.nvim'
 
+" Terraform plugins
+Plug 'hashivim/vim-terraform'
+
 """Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
@@ -62,6 +65,7 @@ set mouse=a          " Enable mouse support
 set relativenumber   " set relative line number
 set list
 set listchars=tab:!·,trail:·
+set nocompatible
 filetype on          " Detect and set the filetype option and trigger the FileType Event
 filetype plugin on   " Load the plugin file for the file type, if any
 filetype indent on   " Load the indent file for the file type, if any
