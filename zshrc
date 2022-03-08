@@ -36,6 +36,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 ### Common Aliases
 alias wkt="${HOME}/Documents/wkt"
 alias v="nvim"
@@ -98,6 +101,7 @@ alias kx="kubectl exec -it"
 
 # Add kubectl auto complete
 source <(kubectl completion zsh)
+complete -F __start_kubectl k
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
 #source /home/parra/kube-ps1/kube-ps1.sh
