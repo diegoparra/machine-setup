@@ -41,7 +41,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 ### Common Aliases
 alias wkt="${HOME}/Documents/wkt"
-alias v="nvim"
+alias v="lvim"
 alias gs="git status"
 
 alias red="${HOME}/Documents/wkt/linkfire/Redirector3"
@@ -109,8 +109,6 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 #KUBE_PS1_CTX_COLOR="green"
 #export PATH=$HOME/bin:$PATH
 
-
-
 # KUBEPS1
 function kube-toggle() {
   if (( ${+POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND} )); then
@@ -143,7 +141,11 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-
-
 # Kitty
 alias ssh="kitty +kitten ssh"
+
+# Add mysql-client to MacBook
+export PATH="${PATH}:/usr/local/opt/mysql-client/bin"
+
+# add lvim to path
+export PATH="${PATH}:${HOME}/.local/bin"
