@@ -41,6 +41,6 @@ rm -rf ~/.config/nvim/coc-settings.json ; ln -s ${HOME}/machine-setup/coc-settin
 rm -rf ~/.config/i3/config ; ln -s ${HOME}/machine-setup/i3/config ~/.config/i3/config
 rm -rf ~/.config/i3status/config ; ln -s ${HOME}/machine-setup/i3status/config ~/.config/i3status/config
 rm -rf ~/.config/kitty ; ln -s ${HOME}/machine-setup/kitty ~/.config/kitty
-rm -rf ~/.config/lvim ; ln -s ${HOME}/machine-setup/lvim ~/.config/lvim
+rm -rf ~/.config/lvim/config.lua ; ln -s ${HOME}/machine-setup/lvim/config.lua  ~/.config/lvim/config.lua
 
 ```
