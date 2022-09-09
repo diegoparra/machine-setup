@@ -149,8 +149,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-# Kitty
-alias ssh="kitty +kitten ssh"
 
 # Add mysql-client to MacBook
 export PATH="${PATH}:/usr/local/opt/mysql-client/bin"
