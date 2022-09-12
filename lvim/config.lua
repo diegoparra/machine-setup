@@ -151,6 +151,7 @@ lvim.plugins = {
   { "fatih/vim-go" },
   { "lunarvim/colorschemes" },
   { "folke/tokyonight.nvim" },
+  { "lukas-reineke/indent-blankline.nvim" },
   -- { "gruvbox-community/gruvbox" },
   --     {
   --       "folke/trouble.nvim",
