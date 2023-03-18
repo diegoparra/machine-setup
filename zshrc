@@ -49,7 +49,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 ### Common Aliases
 alias wkt="${HOME}/Documents/wkt"
-alias v="lvim"
+alias v="nvim"
 alias gs="git status"
 
 alias red="${HOME}/Documents/wkt/linkfire/Redirector3"
