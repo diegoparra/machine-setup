@@ -42,11 +42,10 @@ git clone https://github.com/diegoparra/machine-setup.git
 ```
 rm -rf ~/.zshrc ; ln -s ${HOME}/machine-setup/zshrc ~/.zshrc
 rm -rf ~/.tmux.conf ; ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
-rm -rf ~/.config/nvim/init.vim ; ln -s ${HOME}/machine-setup/init.vim ~/.config/nvim/init.vim
-rm -rf ~/.config/nvim/coc-settings.json ; ln -s ${HOME}/machine-setup/coc-settings.json ~/.config/nvim/coc-settings.json
 rm -rf ~/.config/i3/config ; ln -s ${HOME}/machine-setup/i3/config ~/.config/i3/config
 rm -rf ~/.config/i3status/config ; ln -s ${HOME}/machine-setup/i3status/config ~/.config/i3status/config
 rm -rf ~/.config/kitty ; ln -s ${HOME}/machine-setup/kitty ~/.config/kitty
 rm -rf ~/.config/lvim/config.lua ; ln -s ${HOME}/machine-setup/lvim/config.lua  ~/.config/lvim/config.lua
+rm -rf ~/.config/nvim/lua ; ln -s ${HOME}/machine-setup/lazy-vim/lua  ~/.config/nvim/lua
 
 ```
