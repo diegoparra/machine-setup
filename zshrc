@@ -33,8 +33,8 @@ plugins=(
 	aws
 	docker
 	tmux
-    web-search
-    zsh-syntax-highlighting
+    	web-search
+    	zsh-syntax-highlighting
 	zsh-autosuggestions
  )
 
@@ -46,6 +46,9 @@ source $ZSH/oh-my-zsh.sh
 
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Open tmux on startup, requires tmux plugin
+ZSH_TMUX_AUTOSTART=true
 
 ### Common Aliases
 alias wkt="${HOME}/Documents/wkt"
