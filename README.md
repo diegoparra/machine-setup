@@ -41,6 +41,7 @@ git clone https://github.com/diegoparra/machine-setup.git
 
 ```
 rm -rf ~/.zshrc ; ln -s ${HOME}/machine-setup/zshrc ~/.zshrc
+rm -rf ~/.alacritty.yml ; ln -s ${HOME}/machine-setup/alacritty/alacritty.yml ~/.alacritty.yml
 rm -rf ~/.tmux.conf ; ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
 rm -rf ~/.config/i3/config ; ln -s ${HOME}/machine-setup/i3/config ~/.config/i3/config
 rm -rf ~/.config/i3status/config ; ln -s ${HOME}/machine-setup/i3status/config ~/.config/i3status/config
