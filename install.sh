@@ -91,12 +91,6 @@ function kubectx(){
   sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 }
 
-function helm(){
-	curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-	chmod 700 get_helm.sh
-	./get_helm.sh
-}
-
 function eksctl(){
 	curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 
@@ -105,8 +99,7 @@ function eksctl(){
 }
 
 function nvm(){
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-	bash
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 	
 	nvm install --lts
 }
@@ -163,7 +156,11 @@ function fonts(){
   unzip JetBrainsMono.zip -d ~/.fonts
   fc-cache -fv
   echo "done"
-  
+}
+
+function act(){
+  # Doc: https://github.com/nektos/act
+  curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 }
 
 
@@ -175,6 +172,10 @@ case $1 in
 
   zsh)
     zsh
+  ;;
+
+  sugest)
+    sugest
   ;;
 
   docker)
@@ -193,20 +194,36 @@ case $1 in
     kube
   ;;
 
-  sugest)
-    sugest
+  fuzzy) 
+    fuzzy
+  ;;  
+
+  kubectx)
+    kubectx
   ;;
-  
-  helm)
-    helm
-  ;;
-  
+
   eksctl)
     eksctl
   ;;
 
+  nvm)
+    nvm
+  ;;
+
+  neovim)
+    neovim
+  ;;
+
+  powerlevel10k)
+    powerlevel10k
+  ;;
+
   vpn)
     vpn
+  ;;
+
+  ripgrep)
+    ripgrep
   ;;
 
   air)
@@ -216,26 +233,34 @@ case $1 in
   fonts)
     fonts
   ;;
-  
+
+  act)
+    act
+  ;;
   
   all)
     package
+    zsh
+    sugest
     docker
     pip
-    kube
-    sugest
-    zsh
     tmux
+    kube
     fuzzy
     kubectx
-    # helm
-    # eksctl
+    eksctl
+    nvm
+    neovim
+    powerlevel10k
     vpn
+    ripgrep
     air
     fonts
+    act
   ;;
 
   *)
   echo "Usage: install.sh all"
+  ;;
 
 esac
