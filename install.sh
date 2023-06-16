@@ -149,8 +149,22 @@ function ripgrep(){
 	sudo apt-get install ripgrep -y
 }
 
-### NERD FONTS JETBRAINS
-# https://www.nerdfonts.com/font-downloads
+function air(){
+  # DOC: https://github.com/cosmtrek/air
+  go install github.com/cosmtrek/air@latest
+}
+
+function fonts(){
+  ### NERD FONTS JETBRAINS
+  # https://www.nerdfonts.com/font-downloads
+  echo "[-] Download fonts [-]"
+  echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip"
+  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+  unzip JetBrainsMono.zip -d ~/.fonts
+  fc-cache -fv
+  echo "done"
+  
+}
 
 
 case $1 in
@@ -194,6 +208,14 @@ case $1 in
   vpn)
     vpn
   ;;
+
+  air)
+    air
+  ;;
+
+  fonts)
+    fonts
+  ;;
   
   
   all)
@@ -206,12 +228,14 @@ case $1 in
     tmux
     fuzzy
     kubectx
-    helm
-    eksctl
+    # helm
+    # eksctl
     vpn
+    air
+    fonts
   ;;
 
   *)
-  echo "Usage: setup.sh all"
+  echo "Usage: install.sh all"
 
 esac
