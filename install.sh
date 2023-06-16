@@ -16,7 +16,8 @@ sudo apt-get install -y \
     build-essential \
     libevent-dev \
     libncurses5-dev \
-    mysql-client
+    lolcat \
+    default-mysql-client
 }
 
 function zsh(){
