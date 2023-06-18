@@ -32,6 +32,21 @@ sudo apt install timer
 ```
 
 
+## Golang Tools
+[goimports-reviser](https://github.com/incu6us/goimports-reviser)
+go install -v github.com/incu6us/goimports-reviser/v3@latest
+
+
+[gofumpt](https://github.com/mvdan/gofumpt)
+go install mvdan.cc/gofumpt@latest
+
+[golines](https://github.com/segmentio/golines)
+go install github.com/segmentio/golines@latest
+
+[delve](https://github.com/go-delve/delve)
+go install github.com/go-delve/delve/cmd/dlv@latest
+
+
 # Configuring shortcuts
 
 ```
