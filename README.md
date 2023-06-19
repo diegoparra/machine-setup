@@ -31,6 +31,12 @@ sudo apt update
 sudo apt install timer
 ```
 
+# Configuring NvChad
+```
+rm -rf ~/.cache/nvim ~/.local/share/nvim/ ~/.config/nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+```
+
 
 ## Golang Tools
 [goimports-reviser](https://github.com/incu6us/goimports-reviser)
@@ -54,14 +60,18 @@ cd ~
 git clone https://github.com/diegoparra/machine-setup.git
 ```
 
+
+
 ```
 rm -rf ~/.zshrc ; ln -s ${HOME}/machine-setup/zshrc ~/.zshrc
 rm -rf ~/.alacritty.yml ; ln -s ${HOME}/machine-setup/alacritty/alacritty.yml ~/.alacritty.yml
 rm -rf ~/.tmux.conf ; ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
-rm -rf ~/.config/i3/config ; ln -s ${HOME}/machine-setup/i3/config ~/.config/i3/config
-rm -rf ~/.config/i3status/config ; ln -s ${HOME}/machine-setup/i3status/config ~/.config/i3status/config
 rm -rf ~/.config/kitty ; ln -s ${HOME}/machine-setup/kitty ~/.config/kitty
-rm -rf ~/.config/lvim/config.lua ; ln -s ${HOME}/machine-setup/lvim/config.lua  ~/.config/lvim/config.lua
-rm -rf ~/.config/nvim/lua ; ln -s ${HOME}/machine-setup/lazy-vim/lua  ~/.config/nvim/lua
+
+rm -rf ~/.config/nvim/lua/custom/chadrc.lua ; ln -s ${HOME}/machine-setup/nvchad/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
+rm -rf ~/.config/nvim/lua/custom/plugins.lua ; ln -s ${HOME}/machine-setup/nvchad/plugins.lua ~/.config/nvim/lua/custom/plugins.lua
+rm -rf ~/.config/nvim/lua/custom/mappings.lua ; ln -s ${HOME}/machine-setup/nvchad/mappings.lua ~/.config/nvim/lua/custom/mappings.lua
+
+rm -rf ~/.config/nvim/lua/custom/configs ; ln -s ${HOME}/machine-setup/nvchad/configs ~/.config/nvim/lua/custom/configs
 
 ```
