@@ -19,7 +19,7 @@ return {
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "tokyonight",
+			colorscheme = "catppuccin",
 		},
 	},
 
@@ -232,6 +232,7 @@ return {
 				"stylua",
 				"shellcheck",
 				"flake8",
+				"gopls",
 			},
 		},
 	},

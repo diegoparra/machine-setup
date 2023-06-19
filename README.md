@@ -75,11 +75,8 @@ rm -rf ~/.alacritty.yml ; ln -s ${HOME}/machine-setup/alacritty/alacritty.yml ~/
 rm -rf ~/.tmux.conf ; ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
 rm -rf ~/.config/kitty ; ln -s ${HOME}/machine-setup/kitty ~/.config/kitty
 
-rm -rf ~/.config/nvim/lua/custom;  ln -s ${HOME}/machine-setup/nvchad/custom ~/.config/nvim/lua/custom
-rm -rf ~/.config/nvim/lua/custom/chadrc.lua ; ln -s ${HOME}/machine-setup/nvchad/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
-rm -rf ~/.config/nvim/lua/custom/plugins.lua ; ln -s ${HOME}/machine-setup/nvchad/plugins.lua ~/.config/nvim/lua/custom/plugins.lua
-rm -rf ~/.config/nvim/lua/custom/mappings.lua ; ln -s ${HOME}/machine-setup/nvchad/mappings.lua ~/.config/nvim/lua/custom/mappings.lua
 
-rm -rf ~/.config/nvim/lua/custom/configs ; ln -s ${HOME}/machine-setup/nvchad/configs ~/.config/nvim/lua/custom/configs
+rm -rf ~/.config/nvim/lua ; ln -s ${HOME}/machine-setup/lazy-vim/lua ~/.config/nvim/lua
+
 
 ```
