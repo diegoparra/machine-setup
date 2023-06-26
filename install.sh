@@ -164,6 +164,16 @@ function act(){
   curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 }
 
+function terraform() {
+  # https://github.com/tfutils/tfenv
+  git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv
+  sudo ln -s ~/.tfenv/bin/* /usr/local/bin
+
+  # https://github.com/cunymatthieu/tgenv
+  git clone https://github.com/cunymatthieu/tgenv.git ~/.tgenv
+  sudo ln -s ~/.tgenv/bin/* /usr/local/bin
+}
+
 
 case $1 in
 
