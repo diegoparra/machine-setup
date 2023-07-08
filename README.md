@@ -74,9 +74,33 @@ rm -rf ~/.zshrc ; ln -s ${HOME}/machine-setup/zshrc ~/.zshrc
 rm -rf ~/.alacritty.yml ; ln -s ${HOME}/machine-setup/alacritty/alacritty.yml ~/.alacritty.yml
 rm -rf ~/.tmux.conf ; ln -s ${HOME}/machine-setup/tmux.conf ~/.tmux.conf
 rm -rf ~/.config/kitty ; ln -s ${HOME}/machine-setup/kitty ~/.config/kitty
+```
 
+### Old setup for nvim
+#rm -rf ~/.config/nvim/lua ; ln -s ${HOME}/machine-setup/lazy-vim/lua ~/.config/nvim/lua
 
-rm -rf ~/.config/nvim/lua ; ln -s ${HOME}/machine-setup/lazy-vim/lua ~/.config/nvim/lua
+### New setup using nvchad
 
+### Removing old nvim files
+```
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+```
+
+### Installing NvChad
+```
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+mkdir -p ~/.config/nvim/lua/custom/configs
+```
+
+### Creating synbolic links to nvchad config files
+```
+ln -s ${HOME}/machine-setup/nvchad/custom/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
+ln -s ${HOME}/machine-setup/nvchad/custom/mappings.lua ~/.config/nvim/lua/custom/mappings.lua
+ln -s ${HOME}/machine-setup/nvchad/custom/plugins.lua ~/.config/nvim/lua/custom/plugins.lua
+
+ln -s ${HOME}/machine-setup/nvchad/custom/configs/lspconfig.lua ~/.config/nvim/lua/custom/configs/lspconfig.lua
+ln -s ${HOME}/machine-setup/nvchad/custom/configs/null-ls.lua ~/.config/nvim/lua/custom/configs/null-ls.lua
 
 ```
