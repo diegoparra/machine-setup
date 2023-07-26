@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
-local servers = { "yamlls", "bashls", "pyright", "html", "cssls", "jsonls", "dockerls", "ansiblels", "tsserver", "emmet_ls" }
+local servers = { "yamlls", "bashls", "pyright", "html", "cssls", "jsonls", "dockerls", "terraformls", "ansiblels", "tsserver", "emmet_ls" }
 
 lspconfig.gopls.setup {
   on_attach = on_attach,
@@ -29,14 +29,6 @@ lspconfig.gopls.setup {
 --   cmd = {"terraform-ls", "serve"},
 --   filetypes = {"terraform", "tf", "hcl", "terraform-vars"},
 -- }
-
-lspconfig.terraformls.setup{}
-vim.api.nvim_create_autocmd({"BufWritePre"}, {
-  pattern = {"*.tf", "*.tfvars"},
-  callback = function()
-    vim.lsp.buf.format()
-  end,
-})
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

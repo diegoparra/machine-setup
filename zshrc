@@ -54,6 +54,7 @@ ZSH_TMUX_AUTOSTART=true
 alias wkt="${HOME}/Documents/wkt"
 alias v="nvim"
 alias gs="git status"
+alias python="python3"
 
 alias red="${HOME}/Documents/wkt/linkfire/Redirector3"
 

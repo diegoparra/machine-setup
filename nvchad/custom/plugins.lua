@@ -35,7 +35,10 @@ local plugins = {
         "terraform-ls",
 
         -- docker
-        "dockerfile-language-server"
+        "dockerfile-language-server",
+
+        -- yaml
+        "yaml-language-server",
       },
     },
   },
