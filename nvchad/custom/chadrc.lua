@@ -1,7 +1,7 @@
 ---@type ChadrcConfig 
  local M = {}
  M.ui = {
-  theme = 'tokyodark',
+  theme = 'oxocarbon',
   transparency = true,
 }
  M.plugins = "custom.plugins"

@@ -105,5 +105,13 @@ ln -s ${HOME}/machine-setup/nvchad/custom/plugins.lua ~/.config/nvim/lua/custom/
 ln -s ${HOME}/machine-setup/nvchad/custom/configs/lspconfig.lua ~/.config/nvim/lua/custom/configs/lspconfig.lua
 ln -s ${HOME}/machine-setup/nvchad/custom/configs/null-ls.lua ~/.config/nvim/lua/custom/configs/null-ls.lua
 ln -s ${HOME}/machine-setup/nvchad/custom/configs/copilot.lua ~/.config/nvim/lua/custom/configs/copilot.lua
+ln -s ${HOME}/machine-setup/nvchad/custom/configs/rust-tools.lua ~/.config/nvim/lua/custom/configs/rust-tools.lua
 
 ```
+
+
+### Configuring the environment to rust 
+```
+rustup component add rust-analyzer
+```
+
