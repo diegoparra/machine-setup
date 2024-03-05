@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
-local servers = { "yamlls", "bashls", "pyright", "html", "cssls", "jsonls", "dockerls",  "ansiblels", "tsserver", "emmet_ls" }
+local servers = { "yamlls", "bashls", "pyright", "html", "cssls", "jsonls", "dockerls",  "ansiblels", "tsserver", "emmet_ls", "terraformls" }
 
 lspconfig.gopls.setup {
   on_attach = on_attach,
@@ -21,13 +21,6 @@ lspconfig.gopls.setup {
       },
     },
   },
-}
-
-lspconfig.terraformls.setup{
-  on_attach = on_attach,
-  capabilities = capabilities,
-  cmd = {"terraform-ls", "serve"},
-  filetypes = {"terraform", "tf", "hcl", "terraform-vars"},
 }
 
 -- lspconfig.rust_analyzer.setup{
