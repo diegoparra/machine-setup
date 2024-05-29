@@ -54,7 +54,7 @@ ZSH_TMUX_AUTOSTART=true
 alias wkt="${HOME}/Documents/wkt"
 alias v="nvim"
 alias gs="git status"
-alias python="python3"
+# alias python="python3"
 
 alias red="${HOME}/Documents/wkt/linkfire/Redirector3"
 
@@ -176,3 +176,10 @@ pomodoro () {
 
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
+
+
+impacto () {
+  export AWS_ACCESS_KEY_ID=$(aws configure get impacto.aws_access_key_id)
+  export AWS_SECRET_ACCESS_KEY=$(aws configure get impacto.aws_secret_access_key)
+  export AWS_DEFAULT_REGION=$(aws configure get impacto.region)
+}
